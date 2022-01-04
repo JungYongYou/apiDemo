@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: cluster0-shard-00-02.39hgj.mongodb.net:27017
+    username: lukaryu
+    password: Sicc2020!
