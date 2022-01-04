@@ -9,15 +9,20 @@ import com.example.demo.info.model.Project;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 public class InfoController {
 
 	@GetMapping("/info")
 	public Object projectInfo() {
+		log.debug("/info start");
 		Project project = new Project();
 		project.projectName = "apiDemo";
 		project.author = "jydev";
 		project.createdDate = new Date();
+		log.info("return {}", project.toString());
 		return project;
 	}
 	
