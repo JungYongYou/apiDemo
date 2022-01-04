@@ -2,6 +2,7 @@ package com.example.demo.info;
 
 import java.util.Date;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,15 +15,18 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @RestController
 public class InfoController {
+	
+	private InfoService infoService;
+	
+	@Autowired  // spring 4.3 버전 이상부터는 생략 가능
+	public InfoController(InfoService infoService) {
+		this.infoService = infoService;
+	}
 
 	@GetMapping("/info")
 	public Object projectInfo() {
 		log.debug("/info start");
-		Project project = new Project();
-		project.projectName = "apiDemo";
-		project.author = "jydev";
-		project.createdDate = new Date();
-		log.info("return {}", project.toString());
+		Project project = infoService.getProjectInfo();
 		return project;
 	}
 	
