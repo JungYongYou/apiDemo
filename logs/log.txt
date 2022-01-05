@@ -422,6 +422,7 @@ Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
 [INFO ] 02:04:48.068 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 [INFO ] 02:04:48.068 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
 [INFO ] 02:05:20.582 o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+<<<<<<< HEAD
 [INFO ] 00:59:12.888 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 [INFO ] 00:59:12.892 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 [INFO ] 00:59:12.942 com.example.demo.ApiDemoApplication - Starting ApiDemoApplication using Java 17.0.1 on LUKARYU-GAMING with PID 8496 (C:\workspace\eclipse\apiDemo\bin\main started by LUKARYU in C:\workspace\eclipse\apiDemo)
@@ -476,3 +477,126 @@ Caused by: java.lang.ClassNotFoundException: com.google.gson.JsonElement
 [INFO ] 01:01:19.630 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
 [INFO ] 01:01:19.633 com.example.demo.ApiDemoApplication - Started ApiDemoApplication in 0.229 seconds (JVM running for 414.439)
 [INFO ] 01:01:19.634 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+=======
+>>>>>>> branch 'master' of https://github.com/JungYongYou/apiDemo.git
+[INFO ] 01:05:15.862 com.example.demo.ApiDemoApplication - Starting ApiDemoApplication using Java 17.0.1 on LUKARYU-GAMING with PID 8496 (C:\workspace\eclipse\apiDemo\bin\main started by LUKARYU in C:\workspace\eclipse\apiDemo)
+[INFO ] 01:05:15.863 com.example.demo.ApiDemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 01:05:15.986 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 01:05:15.986 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 01:05:15.986 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 01:05:15.986 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 01:05:15.997 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 01:05:15.997 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 133 ms
+[WARN ] 01:05:16.015 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'infoController' defined in file [C:\workspace\eclipse\apiDemo\bin\main\com\example\demo\info\InfoController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'infoService' defined in file [C:\workspace\eclipse\apiDemo\bin\main\com\example\demo\info\InfoService.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.info.InfoService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on tokens, delete these tokens
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error, insert ";" to complete Statement
+	Syntax error, insert "}" to complete MethodBody
+	The type InfoService is already defined
+	Syntax error on tokens, delete these tokens
+	Invalid character constant
+
+[INFO ] 01:05:16.016 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[ERROR] 01:05:16.033 o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'infoController' defined in file [C:\workspace\eclipse\apiDemo\bin\main\com\example\demo\info\InfoController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'infoService' defined in file [C:\workspace\eclipse\apiDemo\bin\main\com\example\demo\info\InfoService.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.info.InfoService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on tokens, delete these tokens
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error, insert ";" to complete Statement
+	Syntax error, insert "}" to complete MethodBody
+	The type InfoService is already defined
+	Syntax error on tokens, delete these tokens
+	Invalid character constant
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.example.demo.ApiDemoApplication.main(ApiDemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'infoService' defined in file [C:\workspace\eclipse\apiDemo\bin\main\com\example\demo\info\InfoService.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.info.InfoService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on tokens, delete these tokens
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error, insert ";" to complete Statement
+	Syntax error, insert "}" to complete MethodBody
+	The type InfoService is already defined
+	Syntax error on tokens, delete these tokens
+	Invalid character constant
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1389)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.info.InfoService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	Syntax error on tokens, delete these tokens
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error, insert ";" to complete Statement
+	Syntax error, insert "}" to complete MethodBody
+	The type InfoService is already defined
+	Syntax error on tokens, delete these tokens
+	Invalid character constant
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	... 38 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on tokens, delete these tokens
+	Syntax error on token(s), misplaced construct(s)
+	Syntax error, insert ";" to complete Statement
+	Syntax error, insert "}" to complete MethodBody
+	The type InfoService is already defined
+	Syntax error on tokens, delete these tokens
+	Invalid character constant
+
+	at com.example.demo.info.InfoService.<init>(InfoService.java:4)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 40 common frames omitted
+[INFO ] 01:05:37.527 com.example.demo.ApiDemoApplication - Starting ApiDemoApplication using Java 17.0.1 on LUKARYU-GAMING with PID 8496 (C:\workspace\eclipse\apiDemo\bin\main started by LUKARYU in C:\workspace\eclipse\apiDemo)
+[INFO ] 01:05:37.527 com.example.demo.ApiDemoApplication - No active profile set, falling back to default profiles: default
+[INFO ] 01:05:37.650 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[INFO ] 01:05:37.650 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+[INFO ] 01:05:37.650 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 01:05:37.650 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[INFO ] 01:05:37.658 o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 01:05:37.658 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 130 ms
+[INFO ] 01:05:37.716 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 01:05:37.720 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+[INFO ] 01:05:37.721 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[INFO ] 01:05:37.724 com.example.demo.ApiDemoApplication - Started ApiDemoApplication in 0.214 seconds (JVM running for 672.529)
+[INFO ] 01:05:37.725 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
