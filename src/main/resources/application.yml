@@ -1,6 +1,6 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: cluster0-shard-00-02.39hgj.mongodb.net:27017
-    username: lukaryu
+    url: jdbc:mysql://localhost:3306/world?serverTimeZone=UTC&CharacterEncoding=UTF-8
+    username: jydev
     password: Sicc2020!

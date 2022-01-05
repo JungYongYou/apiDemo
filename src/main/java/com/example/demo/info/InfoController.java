@@ -1,11 +1,13 @@
 package com.example.demo.info;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.info.model.City;
 import com.example.demo.info.model.Project;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -48,5 +50,12 @@ public class InfoController {
 		jo.add("follower", ja);
 		
 		return jo.toString();
+	}
+	
+	@GetMapping("/cityList")
+	public Object cityList() {
+		log.debug("/cityList start");
+		List<City> cityList = infoService.getCityList(); 
+		return cityList;
 	}
 }
