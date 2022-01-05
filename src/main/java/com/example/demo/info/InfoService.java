@@ -23,7 +23,7 @@ public class InfoService {
 		return this.cityRepository.findList();
 	}
 	
-	public Project getProjectInfo() {		
+	public Project getProjectInfo() {	
 		Project project = new Project();
 		project.projectName = "apiDemo";
 		project.author = "jydev";
